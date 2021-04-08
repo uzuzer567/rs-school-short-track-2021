@@ -9,22 +9,21 @@
  *
  */
 function getEmailDomain(email) {
-  let emailArray = email.split('');
-  let answerArray = [];
-  let answer = "";
+  const emailArray = email.split('');
+  const answerArray = [];
+  let answer = '';
   let counter = 0;
-  for(let i = emailArray.length - 1; i > 0; i--) {
-	  if(counter === 0) {
-		 if(emailArray[i] !== "@") {
+  for (let i = emailArray.length - 1; i > 0; i--) {
+	  if (counter === 0) {
+		 if (emailArray[i] !== '@') {
 		   answerArray.push(emailArray[i]);
-		 }
-		 else {
+		 } else {
 			 counter++;
 			 break;
 		 }
 	  }
   }
-  for(let i = answerArray.length - 1; i >= 0; i--) {
+  for (let i = answerArray.length - 1; i >= 0; i--) {
 	  answer += answerArray[i];
   }
   return answer;
