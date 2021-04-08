@@ -8,7 +8,7 @@
  * For the input 'prettyandsimple@example.com', the output should be 'example.com'
  *
  */
-function getEmailDomain(/* email */) {
+function getEmailDomain(email) {
   let emailArray = email.split('');
   let answerArray = [];
   let answer = "";
