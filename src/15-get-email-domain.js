@@ -13,17 +13,18 @@ function getEmailDomain(/* email */) {
   let answerArray = [];
   let answer = "";
   let counter = 0;
-  for(let i = emailArray.length; i > 0; i--) {
+  for(let i = emailArray.length - 1; i > 0; i--) {
 	  if(counter === 0) {
 		 if(emailArray[i] !== "@") {
 		   answerArray.push(emailArray[i]);
 		 }
 		 else {
 			 counter++;
+			 break;
 		 }
 	  }
   }
-  for(let i = 0; i < answerArray.length; i++) {
+  for(let i = answerArray.length - 1; i >= 0; i--) {
 	  answer += answerArray[i];
   }
   return answer;
