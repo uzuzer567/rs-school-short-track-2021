@@ -14,17 +14,17 @@ function getEmailDomain(email) {
   let answer = '';
   let counter = 0;
   for (let i = emailArray.length - 1; i > 0; i--) {
-	  if (counter === 0) {
-		 if (emailArray[i] !== '@') {
-		   answerArray.push(emailArray[i]);
-		 } else {
-			 counter++;
-			 break;
-		 }
-	  }
+    if (counter === 0) {
+      if (emailArray[i] !== '@') {
+        answerArray.push(emailArray[i]);
+      } else {
+        counter++;
+        break;
+      }
+    }
   }
   for (let i = answerArray.length - 1; i >= 0; i--) {
-	  answer += answerArray[i];
+    answer += answerArray[i];
   }
   return answer;
 }
