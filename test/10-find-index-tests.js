@@ -22,7 +22,7 @@ describe('10-find-index', () => {
 
   it.optional('should finish the search with the given time', () => {
     findIndex(bigInput, 99999999);
-  }).timeout(getTimeout(bigInput));
+  }).timeout(2000);
 
   it.optional('should not call built-in findIndex method', () => {
     const stub = sandbox.stub(Array.prototype, 'findIndex');
