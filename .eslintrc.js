@@ -20,8 +20,5 @@ module.exports = {
     'no-plusplus': 'off',
     'func-names': 'off',
     'space-before-function-paren': 'off',
-    'linebreak-style': 0,
-    'no-mixed-spaces-and-tabs': 0,
-    'no-tabs': 0,
   },
 };
