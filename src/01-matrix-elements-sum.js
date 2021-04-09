@@ -16,10 +16,10 @@
  */
 function getMatrixElementsSum(matrix) {
   let sum = 0;
-  for (let i = 0; i < matrix.width; i++) {
-    for (let j = 0; j < matrix.height; j++) {
-      if (matrix[i][j] !== 0) {
-        sum += matrix[i][j];
+  for (let i = 0; i < matrix[0].length; i++) {
+    for (let j = 0; j < matrix.length; j++) {
+      if (matrix[j][i] !== 0) {
+        sum += matrix[j][i];
       } else {
         break;
       }
