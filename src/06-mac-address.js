@@ -16,16 +16,8 @@ function isMAC48Address(n) {
   const nArray = n.split('');
   const answerArray = [];
   for (let i = 0; i < nArray.length; i++) {
-    if (nArray[i] === '-') {
-      if (Number(nArray[i]) > -1 && Number(nArray[i] < 10)) {
-        if (nArray[i] >= 'A' && nArray[i] <= 'F') {
-          answerArray.push(true);
-        } else {
-          answerArray.push(false);
-        }
-      } else {
-        answerArray.push(false);
-      }
+    if (nArray[i] === '-' || (Number(nArray[i]) > -1 && Number(nArray[i] < 10)) || (nArray[i] >= 'A' && nArray[i] <= 'F')) {
+      answerArray.push(true);
     } else {
       answerArray.push(false);
     }
